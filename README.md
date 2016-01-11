@@ -12,4 +12,4 @@ preeny提供了一部分预先写好的函数集，在进行安全研究时可�
 
 <h3>fuzzing Redis</h3>
 LD_PRELOAD=your_preeny_path/x86_64-linux-gnu/desock.so afl-showmap -m2048 -o/dev/null ./redis-server ~/conf < <(echo "PING");
-<image>C:\Users\zhangkaixiang\Desktop\xx.png</image>
+<imag src="C:\Users\zhangkaixiang\Desktop\xx.png"/>
