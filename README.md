@@ -15,24 +15,24 @@ LD_PRELOAD=your_preeny_path/x86_64-linux-gnu/desock.so afl-showmap -m2048 -o/dev
 [*] Executing './redis-server'...
 
 -- Program output begins --
-29193:M 20 Sep 18:39:05.230 * Increased maximum number of open files to 10032 (it was originally set to 1024).
-             _._                                                  
-        _.-``__ ''-._                                             
-    _.-``    `.  `_.  ''-._           Redis 3.1.999 (846da5b2/1) 64 bit
-.-`` .-```.  ```\/    _.,_ ''-._                                   
-(    '      ,       .-`  | `,    )     Running in standalone mode
-|`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
-|    `-._   `._    /     _.-'    |     PID: 29193
-`-._    `-._  `-./  _.-'    _.-'                                   
-|`-._`-._    `-.__.-'    _.-'_.-'|                                  
-|    `-._`-._        _.-'_.-'    |           http://redis.io        
-`-._    `-._`-.__.-'_.-'    _.-'                                   
-|`-._`-._    `-.__.-'    _.-'_.-'|                                  
-|    `-._`-._        _.-'_.-'    |                                  
-`-._    `-._`-.__.-'_.-'    _.-'                                   
-    `-._    `-.__.-'    _.-'                                       
-        `-._        _.-'                                           
-            `-.__.-'                                               
+<br>29193:M 20 Sep 18:39:05.230 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+<br>             _._                                                  
+<br>        _.-``__ ''-._                                             
+<br>    _.-``    `.  `_.  ''-._           Redis 3.1.999 (846da5b2/1) 64 bit
+<br>.-`` .-```.  ```\/    _.,_ ''-._                                   
+<br>(    '      ,       .-`  | `,    )     Running in standalone mode
+<br>|`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+<br>|    `-._   `._    /     _.-'    |     PID: 29193
+<br>`-._    `-._  `-./  _.-'    _.-'                                   
+<br>|`-._`-._    `-.__.-'    _.-'_.-'|                                  
+<br>|    `-._`-._        _.-'_.-'    |           http://redis.io        
+<br>`-._    `-._`-.__.-'_.-'    _.-'                                   
+<br>|`-._`-._    `-.__.-'    _.-'_.-'|                                  
+<br>|    `-._`-._        _.-'_.-'    |                                  
+<br>`-._    `-._`-.__.-'_.-'    _.-'                                   
+<br>    `-._    `-.__.-'    _.-'                                       
+<br>        `-._        _.-'                                           
+<br>            `-.__.-'                                               
 
 29193:M 20 Sep 18:39:05.232 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
 29193:M 20 Sep 18:39:05.232 # Server started, Redis version 3.1.999
