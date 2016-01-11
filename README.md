@@ -12,33 +12,4 @@ preeny提供了一部分预先写好的函数集，在进行安全研究时可�
 
 <h3>fuzzing Redis</h3>
 LD_PRELOAD=your_preeny_path/x86_64-linux-gnu/desock.so afl-showmap -m2048 -o/dev/null ./redis-server ~/conf < <(echo "PING");
-[*] Executing './redis-server'...
-
--- Program output begins --
-<br>29193:M 20 Sep 18:39:05.230 * Increased maximum number of open files to 10032 (it was originally set to 1024).
-<br>             _._                                                  
-<br>        _.-``__ ''-._                                             
-<br>    _.-``    `.  `_.  ''-._           Redis 3.1.999 (846da5b2/1) 64 bit
-<br>.-`` .-```.  ```\/    _.,_ ''-._                                   
-<br>(    '      ,       .-`  | `,    )     Running in standalone mode
-<br>|`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
-<br>|    `-._   `._    /     _.-'    |     PID: 29193
-<br>`-._    `-._  `-./  _.-'    _.-'                                   
-<br>|`-._`-._    `-.__.-'    _.-'_.-'|                                  
-<br>|    `-._`-._        _.-'_.-'    |           http://redis.io        
-<br>`-._    `-._`-.__.-'_.-'    _.-'                                   
-<br>|`-._`-._    `-.__.-'    _.-'_.-'|                                  
-<br>|    `-._`-._        _.-'_.-'    |                                  
-<br>`-._    `-._`-.__.-'_.-'    _.-'                                   
-<br>    `-._    `-.__.-'    _.-'                                       
-<br>        `-._        _.-'                                           
-<br>            `-.__.-'                                               
-
-29193:M 20 Sep 18:39:05.232 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
-29193:M 20 Sep 18:39:05.232 # Server started, Redis version 3.1.999
-29193:M 20 Sep 18:39:05.232 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
-29193:M 20 Sep 18:39:05.232 * DB loaded from disk: 0.000 seconds
-29193:M 20 Sep 18:39:05.232 * The server is now ready to accept connections on port 6379
--- Program output ends --
-[+] Captured 3388 tuples in '/dev/null'.
-#
+<image>C:\Users\zhangkaixiang\Desktop\xx.png</image>
