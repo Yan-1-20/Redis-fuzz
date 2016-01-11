@@ -17,5 +17,5 @@ preeny提供了一部分预先写好的函数集，在进行安全研究时可�
 <br># mkdir testcases syncdir dictionary && cd dictionary
 <br># for i in `curl https://raw.githubusercontent.com/antirez/redis/unstable/src/server.c | grep Command, | sed 's/ //g' | grep -oP <br>'{"(.*?)"' | sort | uniq | sed -e s/\"//g -e s/{//g`; do echo $i> `uuid`; done
 <br># cd
-3.AFL-fuzz测试
-# LD_PRELOAD=~/preeny/x86_64-linux-gnu/desock.so afl-fuzz -i ~/testcases/ -o ~/syncdir/ -x ~/dictionary/  -m2048 ./redis-server ./conf
+<br>3.AFL-fuzz测试
+<br># LD_PRELOAD=~/preeny/x86_64-linux-gnu/desock.so afl-fuzz -i ~/testcases/ -o ~/syncdir/ -x ~/dictionary/  -m2048 ./redis-server ./conf
