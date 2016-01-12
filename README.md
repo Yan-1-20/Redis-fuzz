@@ -14,6 +14,13 @@ preeny提供了一部分预先写好的函数集，在进行安全研究时可�
 ###fuzzing Redis###
 1.PING 测试
 <br>LD_PRELOAD=your_preeny_path/x86_64-linux-gnu/desock.so afl-showmap -m2048 -o/dev/null ./redis-server ~/conf < <(echo "PING");
+<br>提供标准输入的方法还可以为：
+1.1 command << delimiter
+    >document
+    >delimiter
+1.2 command << EOF
+    >document
+    >EOF
 <br>2.创建Redis命令目录供AFL-fuzz使用
 <br>    # mkdir testcases syncdir dictionary && cd dictionary
 <br>    # for i in `curl https://raw.githubusercontent.com/antirez/redis/unstable/src/server.c | grep Command, | sed 's/ //g' | grep -oP <br>    '{"(.*?)"' | sort | uniq | sed -e s/\"//g -e s/{//g`; do echo $i> `uuid`; done
