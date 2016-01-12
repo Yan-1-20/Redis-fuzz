@@ -11,6 +11,7 @@ preeny提供了一部分预先写好的函数集，在进行安全研究时可�
 <br>cd preeny && make && cd
 
 <h3>fuzzing Redis</h3>
+<<<<<<< HEAD
 1.PING 测试
 <br>LD_PRELOAD=your_preeny_path/x86_64-linux-gnu/desock.so afl-showmap -m2048 -o/dev/null ./redis-server ~/conf < <(echo "PING");
 <br>2.创建Redis命令目录供AFL-fuzz使用
@@ -19,3 +20,7 @@ preeny提供了一部分预先写好的函数集，在进行安全研究时可�
 <br># cd
 <br>3.AFL-fuzz测试
 <br># LD_PRELOAD=~/preeny/x86_64-linux-gnu/desock.so afl-fuzz -i ~/testcases/ -o ~/syncdir/ -x ~/dictionary/  -m2048 ./redis-server ./conf
+=======
+LD_PRELOAD=your_preeny_path/x86_64-linux-gnu/desock.so afl-showmap -m2048 -o/dev/null ./redis-server ~/conf < <(echo "PING");
+<imag src="C:\Users\zhangkaixiang\Desktop\xx.png"></img>
+>>>>>>> parent of bc9d5a7... Update README.md
