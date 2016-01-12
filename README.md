@@ -16,10 +16,10 @@ preeny提供了一部分预先写好的函数集，在进行安全研究时可�
 <br>LD_PRELOAD=your_preeny_path/x86_64-linux-gnu/desock.so afl-showmap -m2048 -o/dev/null ./redis-server ~/conf < <(echo "PING");
 <br>提供标准输入的方法还可以为：
 1.1 command << delimiter
-    >document
+    >command
     >delimiter
 1.2 command << EOF
-    >document
+    >command
     >EOF
 <br>2.创建Redis命令目录供AFL-fuzz使用
 <br>    # mkdir testcases syncdir dictionary && cd dictionary
