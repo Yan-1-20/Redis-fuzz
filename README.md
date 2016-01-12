@@ -12,7 +12,7 @@ preeny提供了一部分预先写好的函数集，在进行安全研究时可�
 <br>3.cd preeny && make
 
 ###fuzzing Redis###
-<br>1.PING 测试
+1.PING 测试
 <br>LD_PRELOAD=your_preeny_path/x86_64-linux-gnu/desock.so afl-showmap -m2048 -o/dev/null ./redis-server ~/conf < <(echo "PING");
 <br>2.创建Redis命令目录供AFL-fuzz使用
 <br>    # mkdir testcases syncdir dictionary && cd dictionary
