@@ -6,7 +6,7 @@ LD_PRELOAD命令是UNIX的环境变量，它可以影响程序运行时的链接
 </p>
 
 ##Preeny
-preeny提供了一部分预先写好的函数集，在进行安全研究时可被复写。例如，网络函数connect()和accept()，这些函数部分内容被改写后，便可将网络数据流转换成文件数据流进行操控。Redis使用的协议很简单，在fuzz过程中我们能让AFL执行明确的指令以获取新路径。preeny安装步骤：
+preeny提供了一部分预先写好的函数集，在进行安全研究时可被复写。例如，网络函数connect()和accept()，这些函数部分内容被改写后，便可将网络数据流转换成文件数据流进行操控。Redis使用的协议很简单，在fuzz过程中我们能让AFL执行明确的指令以获取新路径。
     > git clone https://github.com/zardus/preeny.git
     > apt-get install libini-config3 libini-config-dev
     > cd preeny && make
