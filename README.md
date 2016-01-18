@@ -14,7 +14,7 @@ preeny提供了一部分预先写好的函数集，在进行安全研究时可�
 
 ##Fuzzing Redis
 ####1. PING 测试
-<br>LD_PRELOAD=your_preeny_path/x86_64-linux-gnu/desock.so afl-showmap -m2048 -o/dev/null ./redis-server ~/conf < <(echo "PING");
+    > LD_PRELOAD=your_preeny_path/x86_64-linux-gnu/desock.so afl-showmap -m2048 -o/dev/null ./redis-server ~/conf < <(echo "PING");
 <br>提供标准输入的方法还可以为：
 
 #####1.1 command << delimiter
@@ -30,4 +30,3 @@ preeny提供了一部分预先写好的函数集，在进行安全研究时可�
     > for i in `curl https://raw.githubusercontent.com/antirez/redis/unstable/src/server.c | grep Command, | sed 's/ //g' | grep -oP <br>    '{"(.*?)"' | sort | uniq | sed -e s/\"//g -e s/{//g`; do echo $i> `uuid`; done
 #####3.AFL-fuzz测试
     > LD_PRELOAD=~/preeny/x86_64-linux-gnu/desock.so afl-fuzz -i ~/testcases/ -o ~/syncdir/ -x ~/dictionary/  -m2048 ./redis-server ./conf
-
