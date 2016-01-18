@@ -27,3 +27,9 @@ preeny提供了一部分预先写好的函数集，在进行安全研究时可�
 <br>    # cd
 <br>3.AFL-fuzz测试
 <br>    # LD_PRELOAD=~/preeny/x86_64-linux-gnu/desock.so afl-fuzz -i ~/testcases/ -o ~/syncdir/ -x ~/dictionary/  -m2048 ./redis-server ./conf
+
+<table>
+    <tr>
+        <td>Foo</td>
+    </tr>
+</table>
